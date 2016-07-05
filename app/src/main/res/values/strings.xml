@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="country_input_hint">Enter Country/State</string>
+    <string name="label_remove_country">Remove Country?</string>
+    <string name="label_remove_reminder">Delete Reminder?</string>
+    <string name="label_ok">Ok</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="temp_holder">%1$s°C / %2$s°F</string>
+    <string name="label_reminder_time">Reminder Time</string>
+    <string name="label_reminders">Reminders</string>
+    <string name="label_on">ON</string>
+    <string name="label_alarm_description">Repeats daily</string>
+    <string name="notification_placeholder">The weather in %1$s is %2$s. Temperature: %3$sC / %4$sF</string>
+    <string name="label_weather_update">Weather Update</string>
+</resources>

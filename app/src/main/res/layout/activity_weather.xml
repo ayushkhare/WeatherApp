@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.weather.WeatherActivity">
+
+    <ImageButton
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:layout_margin="16dp"
+        android:src="@drawable/add" />
+
+    <ImageButton
+        android:id="@+id/add_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/add_button"
+        android:layout_toStartOf="@+id/add_button"
+        android:background="@null"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_alarm_white_24dp" />
+
+    <ImageView
+        android:layout_below="@+id/add_reminder"
+        android:id="@+id/cloud_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/cloud" />
+
+    <TextView
+        android:id="@+id/country"
+        style="@style/AppTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cloud_image"
+        android:padding="4dp"
+        android:gravity="center"
+        tools:text="Singapore" />
+
+    <TextView
+        android:id="@+id/condition"
+        style="@style/AppTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country"
+        android:gravity="center"
+        android:padding="4dp"
+        tools:text="Thunderstorm" />
+
+    <TextView
+        android:id="@+id/temperature"
+        style="@style/AppTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/condition"
+        android:gravity="center"
+        android:padding="4dp"
+        tools:text="38C" />
+
+
+    <HorizontalScrollView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/country_panel"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>
